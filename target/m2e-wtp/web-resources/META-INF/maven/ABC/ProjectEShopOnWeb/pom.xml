@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ABC</groupId>
+  <artifactId>ProjectEShopOnWeb</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+  <dependencies>
+	  	<dependency>
+		  <groupId>com.paypal.sdk</groupId>
+		  <artifactId>rest-api-sdk</artifactId>
+		  <version>1.14.0</version>	  
+		</dependency>
+		<dependency>
+		    <groupId>javax.mail</groupId>
+		    <artifactId>mail</artifactId>
+		    <version>1.4</version>
+		</dependency>
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.26</version>
+		</dependency>
+	
+		<dependency>
+	        <groupId>javax.servlet</groupId>
+	        <artifactId>jstl</artifactId>
+	        <version>1.2</version>
+	    </dependency>
+	    <dependency>
+		   <groupId>taglibs</groupId>
+		   <artifactId>standard</artifactId>
+		   <version>1.1.2</version>
+		</dependency>
+		
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <release>19</release>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.2.3</version>
+      </plugin>
+        <plugin>
+		    <groupId>com.facebook.tools.maven</groupId>
+		    <artifactId>maven-facebook-plugin</artifactId>
+		    <version>1.0.0</version>
+		    <configuration>
+		      <appId>843730143978452</appId>
+		      <appSecret>6a1f9aa486c936626c9ac96cac5615fc</appSecret>
+		    </configuration>
+		  </plugin>
+    </plugins>
+ 
+  </build>
+</project>
